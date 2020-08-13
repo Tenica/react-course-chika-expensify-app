@@ -78,6 +78,7 @@
     "enzyme-to-json": "^3.0.1",
     "escape-string-regexp": "^1.0.5",
     "esutils": "^2.0.3",
+    "express": "^4.17.1",
     "globals": "^9.18.0",
     "has-ansi": "^2.0.0",
     "invariant": "^2.2.4",
@@ -136,7 +137,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "chika",
   "license": "ISC"
