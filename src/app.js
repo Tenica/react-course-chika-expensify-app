@@ -15,7 +15,6 @@ const store = configureStore();
 
 
 
-
 const jsx = (
     <Provider store={store}>
     <AppRouter/>
