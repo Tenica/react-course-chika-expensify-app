@@ -10,18 +10,11 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
-store.dispatch(addExpense({ description: 'Water bill', amount: 4500}));
-store.dispatch(addExpense({ description: 'Gas bill', createdAt: 1000}));
-store.dispatch(addExpense({ description: 'Rent', amount: 109000}));
 
 
-// setTimeout(() => {
-//     store.dispatch( setTextFilter('bill'));
-// }, 3000)
-const state = store.getState()
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses)
-console.log(store.getState())
+
+
+
 
 const jsx = (
     <Provider store={store}>
@@ -64,21 +57,6 @@ ReactDOM.render(jsx, document.getElementById('app'));
 
 
 
-// import './utils.js'
-// { square, add } from './utils.js';
-
-
-// console.log('app is running')
-// console.log(square(4))
-// console.log(add(100, 20));
-
-
-// import isSenior, {isAdult, canDrink} from './person.js'
-
-// console.log('app is running')
-// console.log(isAdult(8));
-// console.log(canDrink(12));
-// console.log(isSenior(40));
 
 
 
