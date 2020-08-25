@@ -2,6 +2,9 @@
   "name": "expensify",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "v12.16.3"
+  },
   "main": "index.js",
   "dependencies": {
     "ansi-regex": "^2.1.1",
